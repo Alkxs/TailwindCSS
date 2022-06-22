@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Product Modal</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="flex items-center justify-center bg-slate-100 min-h-screen">
+      <!-- Card Container -->
+      <div class="bg-white flex flex-col p-6 m-3 space-y-10 shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16">
+        <!-- .Image -->
+        <div>
+          <img src="./images/headphone.png" alt="headphones" class="mx-auto hover:scale-105 duration-150 w-60" />
+        </div>
+        <!-- Content -->
+        <div class="flex flex-col space-y-6">
+          <!-- Label & Description  -->
+          <div class="flex flex-col mb-4 space-y-3 text-center md:text-left">
+            <div>
+              <div class="bg-black text-white rounded-full inline-block px-3 py-1 text-sm">Free shipping</div>
+            </div>
+          </div>
+          <!-- Title -->
+          <div class="max-w-sm text-2xl font-medium">Razer Kraken Kitty Edt Gaming Headset Quartz</div>
+          <!-- Prize Container -->
+          <div class="flex flex-col space-y-3 mb-4 text-center md:text-left">
+            <p class="line-through">$799</p>
+            <p class="text-5xl font-bold">$599</p>
+            <p class="text-sm font-light text-gray-400">This offer is valid until April 3rd or as long as stock lasts!</p>
+          </div>
+          <!-- Button group -->
+          <div class="group">
+            <button>
+              <div class="">Add to cart</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
