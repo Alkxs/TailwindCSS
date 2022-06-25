@@ -7,5 +7,40 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Image gallery</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Container -->
+    <div class="flex flex-col items-center justify-center min-h-screen bg-cyan-50">
+      <!-- Gallery container -->
+      <div class="flex flex-col items-center justify-center bg-white shadow-lg mx-1 w-1/2 rounded-2xl md:flex-row p-40">
+        <!-- Menu container -->
+        <div class="flex flex-col items-center justify-center w-full space-y-4 pb-12 md:flex-row md:space-x-3 md:items-end md:justify-end">
+          <div class=""><a href="blank">Vector</a></div>
+          <div class=""><a href="blank">Illustrations</a></div>
+          <div class=""><a href="blank">Images</a></div>
+          <div class=""><a href="blank">Icons</a></div>
+        </div>
+        <!-- bar and button container -->
+        <div class="flex flex-col p-2 space-y-8 space-x-5 pb-12">
+          <!--Search bar container -->
+          <div class="flex flex-row">
+            <input type="text" placeholder="Search" class="border border-b-gray-500" />
+            <img src="#" alt="magnifying lens" class="" />
+          </div>
+          <button class="bg-black text-white rounded-md text-center px-14 py-4 hover:bg-white hover:text-black hover:border border-black duration-300">
+            Upload
+          </button>
+        </div>
+        <!-- Gallery container -->
+        <div class="flex flex-col gap-2">
+          <img src="images/image1.jpg" alt="Woman face" />
+          <img src="images/image2.jpg" alt="window" />
+          <img src="images/image3.jpg" alt="roof" />
+          <img src="images/image4.jpg" alt="abstract picture" />
+          <img src="images/image5.jpg" alt="skyscrapers" />
+          <img src="images/image6.jpg" alt="door" />
+        </div>
+      </div>
+    </div>
+  </body>
+  `
 </html>
