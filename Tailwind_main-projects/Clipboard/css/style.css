@@ -625,10 +625,6 @@ h3 {
   width: 100%;
 }
 
-.max-w-3xl {
-  max-width: 48rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -690,18 +686,14 @@ h3 {
   line-height: 1.75rem;
 }
 
-.leading-9 {
-  line-height: 2.25rem;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-grayishBlue {
   --tw-text-opacity: 1;
   color: hsl(201 11% 66% / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
