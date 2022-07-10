@@ -39,8 +39,7 @@
   }
 }
 
-/* Hamburger Menu
-.hamburger {
+Hamburger Menu .hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -83,4 +82,4 @@
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-} */
+}

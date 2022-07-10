@@ -634,20 +634,12 @@ h5 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
 
 .top-48 {
   top: 12rem;
-}
-
-.bottom-4 {
-  bottom: 1rem;
 }
 
 .mx-auto {
@@ -685,6 +677,10 @@ h5 {
   margin-bottom: 5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -697,12 +693,20 @@ h5 {
   height: 2.5rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-full {
   width: 100%;
 }
 
-.w-52 {
-  width: 13rem;
+.w-44 {
+  width: 11rem;
 }
 
 .max-w-6xl {
@@ -719,6 +723,10 @@ h5 {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -739,8 +747,22 @@ h5 {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .border-2 {
@@ -750,6 +772,11 @@ h5 {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -764,6 +791,11 @@ h5 {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pr-0 {
@@ -787,11 +819,6 @@ h5 {
   line-height: 2.5rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -808,6 +835,11 @@ h5 {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .duration-200 {
@@ -895,8 +927,7 @@ h5 {
   }
 }
 
-/* Hamburger Menu
-.hamburger {
+Hamburger Menu .hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -939,7 +970,7 @@ h5 {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
-} */
+}
 
 .group:hover .group-hover\:scale-110 {
   --tw-scale-x: 1.1;
@@ -956,11 +987,6 @@ h5 {
   border-color: rgb(239 246 255 / var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
@@ -968,10 +994,6 @@ h5 {
 
   .md\:right-0 {
     right: 0px;
-  }
-
-  .md\:bottom-8 {
-    bottom: 2rem;
   }
 
   .md\:m-32 {
@@ -987,6 +1009,10 @@ h5 {
     margin-top: 0px;
   }
 
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -999,12 +1025,16 @@ h5 {
     display: none;
   }
 
-  .md\:w-1\/4 {
-    width: 25%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 
   .md\:justify-between {
@@ -1023,6 +1053,18 @@ h5 {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -1035,11 +1077,6 @@ h5 {
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:pl-20 {
