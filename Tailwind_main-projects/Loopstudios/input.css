@@ -39,7 +39,8 @@
   }
 }
 
-Hamburger Menu .hamburger {
+/* Hamburger Menu */
+.hamburger {
   cursor: pointer;
   width: 24px;
   height: 24px;
