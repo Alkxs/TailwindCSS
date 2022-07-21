@@ -967,6 +967,12 @@ video {
   color: rgb(234 179 8 / var(--tw-placeholder-opacity));
 }
 
+#cta {
+  background-image: url('../images/bg-boost-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hover\:bg-cyanLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 69% / var(--tw-bg-opacity));
@@ -1046,8 +1052,18 @@ video {
     padding-bottom: 0.5rem;
   }
 
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
