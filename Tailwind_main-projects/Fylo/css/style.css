@@ -625,6 +625,14 @@ video {
   margin-top: 3.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -643,6 +651,10 @@ video {
 
 .h-5 {
   height: 1.25rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .w-48 {
@@ -665,6 +677,14 @@ video {
   max-width: 24rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -679,6 +699,18 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-24 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -690,6 +722,11 @@ video {
 .bg-accentCyan {
   --tw-bg-opacity: 1;
   background-color: hsl(176 68% 64% / var(--tw-bg-opacity));
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-logo-light-mode {
@@ -729,6 +766,14 @@ video {
   padding-bottom: 13rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -745,6 +790,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -797,6 +847,11 @@ video {
   background-color: hsl(217 28% 15% / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-darkBlue1 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(218 28% 13% / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-logo-dark-mode {
   background-image: url('../images/logo-dark-mode.svg');
 }
@@ -839,14 +894,28 @@ video {
     height: 5rem;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:pt-20 {
