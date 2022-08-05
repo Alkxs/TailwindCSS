@@ -10,13 +10,6 @@ https://www.udemy.com/course/tailwind-from-scratch/
 
 ### A fun project-based course to learn the Tailwind CSS framework and teach you how to build layouts super fast
 
-#### The repository includes:
-
-* code Sandbox
-* 5 Mini-Projects
-* 6 Website Projects
-* My own final project to practice the skills learnt from the course
-
 #### Course Credits
 
 Brad Traversy is the course instructor and project developer
@@ -24,3 +17,10 @@ Brad Traversy is the course instructor and project developer
 Csaba Kissi is a course project developer
 
 Frontend Mentor is a collaborator for project inspiration
+
+#### The repository includes:
+
+* code Sandbox
+* 5 Mini-Projects
+* 6 Website Projects
+* My own final project to practice the skills learnt from the course
