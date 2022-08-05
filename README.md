@@ -8,15 +8,15 @@ The main learning resource used to learn Tailwind CSS can be found at the follow
 
 ## Tailwind From Scratch
 
-### A fun project-based course to learn the Tailwind CSS framework and teach you how to build layouts super fast
+### A fun project-based course to learn the Tailwind CSS framework and teach you how to build layouts super fast.
 
-#### Course Credits
+#### Course Credits:
 
-Brad Traversy is the course instructor and project developer
+- Brad Traversy is the course instructor and project developer
 
-Csaba Kissi is a course project developer
+- Csaba Kissi is a course project developer
 
-Frontend Mentor is a collaborator for project inspiration
+- Frontend Mentor is a collaborator for project inspiration
 
 #### The repository includes:
 
