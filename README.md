@@ -41,6 +41,6 @@ List of projects:
 |3|[Shortly](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/shortly) | [Live Demo]() |
 |4|[Testimonial Grid](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/TestimonialGrid) | [Live Demo]() |
 |5|[Fylo](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/Fylo) | [Live Demo]() |
-|5|[Bookmark](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/bookmark) | [Live Demo]() |
+|6|[Bookmark](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/bookmark) | [Live Demo]() |
 | #             | My own final project | Live Demo  |
 |5|[Cooming soon]() | [...]() |
