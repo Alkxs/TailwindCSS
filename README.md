@@ -24,3 +24,25 @@ The main learning resource used to learn Tailwind CSS can be found at the follow
 * 5 Mini-Projects
 * 6 Website Projects
 * My own final project to practice the skills learnt from the course
+
+
+List of projects:
+
+| #             | 5 Mini-Projects | Live Demo  |
+| --------------|:-------------| ----------:|
+|1|[]() | []() |
+|2|[]() | []() |
+|3|[]() | []() |
+|4|[]() | []() |
+|5|[]() | []() |
+| #             | 6 Website-Projects | Live Demo  |
+| --------------|:-------------| ----------:|
+|1|[]() | []() |
+|2|[]() | []() |
+|3|[]() | []() |
+|4|[]() | []() |
+|5|[]() | []() |
+|5|[]() | []() |
+| #             | My own final project | Live Demo  |
+| --------------|:-------------| ----------:|
+|5|[]() | []() |
