@@ -36,7 +36,6 @@ List of projects:
 |4|[]() | []() |
 |5|[]() | []() |
 | #             | 6 Website-Projects | Live Demo  |
-
 |1|[]() | []() |
 |2|[]() | []() |
 |3|[]() | []() |
@@ -44,5 +43,4 @@ List of projects:
 |5|[]() | []() |
 |5|[]() | []() |
 | #             | My own final project | Live Demo  |
-
 |5|[]() | []() |
