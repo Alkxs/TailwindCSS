@@ -1,2 +1,26 @@
-# Tailwind
-This repo contains all the notes, exercises and projects made with tailwind and will be constantly updated.
+# Tailwind CSS
+
+This repository contains all the notes, exercises and projects made using Tailwind CSS.
+
+The main learning resource used to learn Tailwind CSS can be found at the following link:
+
+https://www.udemy.com/course/tailwind-from-scratch/
+
+## Tailwind From Scratch
+
+### A fun project-based course to learn the Tailwind CSS framework and teach you how to build layouts super fast
+
+#### The repository includes:
+
+* code Sandbox
+* 5 Mini-Projects
+* 6 Website Projects
+* My own final project to practice the skills learnt from the course
+
+#### Course Credits
+
+Brad Traversy is the course instructor and project developer
+
+Csaba Kissi is a course project developer
+
+Frontend Mentor is a collaborator for project inspiration
