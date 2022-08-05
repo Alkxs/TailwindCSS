@@ -4,7 +4,7 @@ This repository contains all the notes, exercises and projects made using Tailwi
 
 The main learning resource used to learn Tailwind CSS can be found at the following link:
 
-https://www.udemy.com/course/tailwind-from-scratch/
+[Course link]( https://www.udemy.com/course/tailwind-from-scratch/)     
 
 ## Tailwind From Scratch
 
