@@ -38,7 +38,7 @@ List of projects:
 | #             | 6 Website-Projects | Live Demo  |
 |1|[Clipboard](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/Clipboard) | [Live Demo](https://stirring-strudel-846d60.netlify.app) |
 |2|[Loopstudios](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/Loopstudios) | [Live Demo](https://singular-biscuit-bdd756.netlify.app/) |
-|3|[Shortly](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/shortly) | [Live Demo](amazing-caramel-a7e180.netlify.app) |
+|3|[Shortly](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/shortly) | [Live Demo](https://amazing-caramel-a7e180.netlify.app) |
 |4|[Testimonial Grid](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/TestimonialGrid) | [Live Demo](https://jovial-quokka-707cde.netlify.app) |
 |5|[Fylo](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/Fylo) | [Live Demo](https://inspiring-sherbet-f9b3aa.netlify.app) |
 |6|[Bookmark](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/bookmark) | [Live Demo](https://luxury-moonbeam-3c4b22.netlify.app) |
