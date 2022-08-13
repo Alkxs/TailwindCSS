@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .main-gradient {
+    @apply bg-gradient-to-br from-[#ffffff] to-[#891112] bg-cover bg-no-repeat;
+  }
+}
