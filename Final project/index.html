@@ -42,7 +42,7 @@
         </div>
 
         <!-- Dark/Light Mode Button -->
-        <button id="theme-toggle" class="text-black  hover:bg-gray-100   focus:outline-none focus:ring-4 focus:ring-black  rounded-lg text-sm p-2.5 dark:text-gray-100 dark:hover-bg-ring-gray-700 dark:focus:ring-gray-100 dark:hover:text-black">
+        <button id="theme-toggle" class="text-black  hover:bg-gray-800   focus:outline-none focus:ring-4 focus:ring-black  rounded-lg text-sm p-2.5 dark:text-gray-100 dark:hover-bg-ring-gray-700 dark:focus:ring-gray-100 dark:hover:text-black dark:hover:bg-gray-100">
           <!-- Dark SVG Icon -->
           <svg
             id="theme-toggle-dark-icon"
@@ -379,13 +379,13 @@
               </ul>
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+              <div class="w-full pt-0 text-3xl text-gray-600 font-bold text-center">
                 $0
                 <span class="text-base">for one user</span>
               </div>
               <div class="flex items-center justify-center">
                 <button
-              class="mx-auto border-2 border-[#891112] lg:mx-0 bg-gray-100 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-gray-200 hover:scale-105 duration-300 ease-in-out lg:px-10">Sign up
+              class="mx-auto border-2 mb-0 border-[#891112] lg:mx-0 bg-gray-100 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-gray-200 hover:scale-105 duration-300 ease-in-out lg:px-10">Sign up
               </button>
               </div>
             </div>
@@ -401,13 +401,13 @@
               </ul>
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-4xl font-bold text-center">
+              <div class="w-full pt-0 text-4xl font-bold text-center">
                 $2.99
                 <span class="text-base">/ per user</span>
               </div>
               <div class="flex items-center justify-center">
                 <button
-              class="mx-auto border-2 border-[#891112] lg:mx-0 dark-gradient text-gray-100 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-[#891112] hover:opacity-80 hover:scale-110 duration-300 ease-in-out lg:px-10">Sign up
+              class="mx-auto border-2 mb-0 border-[#891112] lg:mx-0 dark-gradient text-gray-100 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-[#891112] hover:opacity-80 hover:scale-110 duration-300 ease-in-out lg:px-10">Sign up
               </button>
               </div>
             </div>
@@ -422,13 +422,13 @@
               </ul>
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-              <div class="w-full pt-6 text-3xl text-gray-600 font-bold text-center">
+              <div class="w-full pt-0 text-3xl text-gray-600 font-bold text-center">
                 $x5.99
                 <span class="text-base">/ per user</span>
               </div>
               <div class="flex items-center justify-center">
                 <button
-              class="mx-auto border-2 border-[#891112] lg:mx-0 bg-gray-100 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-gray-200 hover:scale-105 duration-300 ease-in-out lg:px-10">Sign up
+              class="mx-auto border-2 mb-0 border-[#891112] lg:mx-0 bg-gray-100 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-gray-200 hover:scale-105 duration-300 ease-in-out lg:px-10">Sign up
               </button>
                 </button>
               </div>
@@ -438,6 +438,195 @@
       </div>
     </div>
     </section>
+
+    <!-- FAQ Heading -->
+    <section id="faq">
+      <div class="container pt-20 pb-10 mx-auto">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-lg px-6 mx-auto text-center text-graishBlue">
+          Here are some of our FAQs. If you have any other questions you'd like
+          answered please feel free to email us.
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section id="faq-accordion">
+      <!-- Main Container -->
+      <div class="container mx-auto px-6 mb-32">
+        <!-- Accordion Container -->
+        <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+          <!-- Tab 1 -->
+          <div class="py-1 border-b outline-none group" tabindex="1">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-[#891112]"
+              >
+                What is Notefi?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-[#891112]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                Notefi is an app that enhance your note-taking experience. With the easy-to-use program interface you can access your notes in 1 second and share them with your family, friends or colleagues.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div class="py-1 border-b outline-none group" tabindex="2">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-[#891112]"
+              >
+                How can I access Notefi?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-[#891112]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                Notefi is easily accessible through mobile app on smartphones and tablets, desktop app for MAC or Windows, or through the web app on any browser.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div class="py-1 border-b outline-none group" tabindex="3">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-[#891112]"
+              >
+                What's the best plan for me?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-[#891112]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                Depending on how many features you need, we offer 3 different plans: free, personal or team. check out the pricing page for more info.
+              </p>
+            </div>
+          </div>
+
+          <!-- Tab 4 -->
+          <div class="py-1 border-b outline-none group" tabindex="4">
+            <!-- Tab Flex Container -->
+            <div
+              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+            >
+              <!-- Tab Title -->
+              <div
+                class="transition duration-500 ease group-hover:text-[#891112]"
+              >
+                Is there a money back garantee?
+              </div>
+              <!-- Arrow -->
+              <div
+                class="transition duration-500 ease group-focus:-rotate-180 group-focus:text-[#891112]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Tab Inner Content -->
+            <div
+              class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+            >
+              <p class="py-2 text-justify text-gray-400">
+                We are confident you will enjoy our app. If for any reason you're unhappy with your experience, you have a 30-day money-back guarantee to get reimbursed on any Notefi plan you choose.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-gray-800">
+      <!-- Footer Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-around mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Logo/Menu Container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 md:space-x-14 text-[#8D919E]"
+        >
+          <img src="images/logo.png" alt="logo" class="mb-1 w-16 bg-[#8D919E] rounded-2xl p-3" />
+
+          <a href="#features" class="uppercase hover:text-[#891112]">Features</a>
+          <a href="#download" class="uppercase hover:text-[#891112]">Download</a>
+          <a href="#faq" class="uppercase hover:text-[#891112]">FAQ</a>
+        </div>
+      </div>
+    </footer>
     
   </body>
 </html>
