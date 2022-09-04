@@ -4,7 +4,10 @@
 
 @layer components {
   .main-gradient {
-    @apply bg-gradient-to-br from-[#ffffff] to-[#891112] bg-cover bg-no-repeat;
+    @apply bg-gradient-to-br from-white to-[#891112] bg-cover bg-no-repeat;
+  }
+  .dark-gradient {
+    @apply bg-gradient-to-br from-[#891112] to-black bg-cover bg-no-repeat;
   }
 }
 

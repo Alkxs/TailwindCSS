@@ -1,5 +1,6 @@
 module.exports = {
   content: ['./*.html'],
+  darkMode: 'class',
   theme: {
     // colors: {
     //   'blue': '#1fb6ff',

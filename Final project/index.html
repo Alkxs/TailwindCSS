@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,25 +12,75 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Tailwind starter file</title>
+    <script>
+      // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script src="js/script.js" defer></script>
+    <script src="js/stickyNavBar.js" defer></script>
+    <title>Final project</title>
   </head>
   <body>
-    <!-- Container nav + hero section -->
-    <div class="main-gradient">
+    
+    <div class="main-gradient dark:dark-gradient">
+      <div id="main-container">
     <!-- Navigation bar -->
-    <nav class="fixed w-full z-30 top-0">
+    <nav id="header">
       <!-- Navigation container -->
-      <div class="container mx-auto w-full flex items-center justify-between py-2 px-6 space-x-10 md:space-x-20 ">
+      <div class=" mx-auto w-full flex items-center justify-between py-2 px-6 space-x-5 md:space-x-0 md:mx-0 md:w-full">
         <!-- Logo -->
-        <div class="z-20 w-20 h-30">
-          <img src="./images/logo.png" alt="notefy logo image" class="w-full" />
+        <div class="z-20 w-24 h-32 items-center justify-center flex">
+          <img src="./images/logo.png" alt="notefy logo image" class="w-full dark:bg-[#f0e6e6] rounded-2xl p-3" />
         </div>
+
+        <!-- Dark/Light Mode Button -->
+        <button id="theme-toggle" class="text-black  hover:bg-gray-100   focus:outline-none focus:ring-4 focus:ring-black  rounded-lg text-sm p-2.5 dark:text-gray-100 dark:hover-bg-ring-gray-700 dark:focus:ring-gray-100 dark:hover:text-black">
+          <!-- Dark SVG Icon -->
+          <svg
+            id="theme-toggle-dark-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+            ></path>
+          </svg>
+          <!-- Light SVG Icon -->
+          <svg
+            id="theme-toggle-light-icon"
+            class="w-5 h-5 hidden"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
         <!-- Menu items -->
-        <div class="hidden items-center space-x-16 uppercase text-black font-semibold text-lg md:flex">
-          <a href="#features" class="tracking-widest hover:text-[#891112]">Features</a>
-          <a href="#pricing" class="tracking-widest hover:text-[#891112]">Pricing</a>
-          <a href="#faq" class="tracking-widest hover:text-[#891112]">FAQ</a>
-          <a href="#testimonials" class="tracking-widest hover:text-[#891112]">Testimonials</a>
+        <div class="hidden items-center space-x-16 uppercase text-black px-2 dark:text-gray-100 font-semibold text-lg md:flex">
+          <a href="#features" class="tracking-widest hover:text-[#891112] p-2
+          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Features</a>
+          <a href="#pricing" class="tracking-widest hover:text-[#891112] p-2
+          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Pricing</a>
+          <a href="#faq" class="tracking-widest hover:text-[#891112] p-2
+          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">FAQ</a>
+          <a href="#testimonials" class="tracking-widest hover:text-[#891112] p-2
+          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Testimonials</a>
         </div>
 
         <button id="menu-btn" class="z-30 md:hidden focus:outline-none hamburger">
@@ -40,7 +90,7 @@
         </button>
       </div>
       <!-- Mobile Menu -->
-      <div id="menu" class="fixed inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-white uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue hidden">
+      <div id="menu" class="fixed inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-gray-100 uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue hidden">
         <div class="w-full py-3 text-center">
           <a href="#features" class="block hover:text-softRed">Features</a>
         </div>
@@ -54,19 +104,19 @@
           <a href="#" class="block hover:text-softRed">Login</a>
         </div>
       </div>
-      <hr class="border-b border-black opacity-25 my-0 py-0" />
+    
     </nav>
 
     <!-- Hero section -->
-    <section class="hero-section pt-32">
+    <section class="hero-section">
       <!-- Container For Image & Content -->
-      <div class="container p-4 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+      <div class="container p-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <!-- Content -->
         <div class="flex flex-col w-full space-y-10 my-6 justify-center text-center md:w-1/2 md:text-left">
-          <h1 class="my-4 text-4xl font-semibold leading-tight md:text-5xl lg:text-6xl">
+          <h1 class="my-4 text-4xl font-semibold leading-tight dark:text-gray-100 md:text-5xl lg:text-6xl">
             A Simple Note Taking App
           </h1>
-          <p class="max-w-md mx-auto text-lg text-center text-gray-800 md:text-2xl md:text-left md:mt-0 md:mx-0">
+          <p class="max-w-md mx-auto text-lg text-center text-gray-800 dark:text-gray-100 md:text-2xl md:text-left md:mt-0 md:mx-0">
             A clean and simple interface to organize your notes.
             Open your app and see your content instantly. Try it for
             free.
@@ -80,10 +130,10 @@
       <!-- Button container -->
           <div class="flex justify-center items-center w-full mb-6">
           <button
-            class="text-sm font-semibold bg-white text-gray-800 rounded-full my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
-            hover:bg-gray-800 hover:text-white
+            class="text-sm font-semibold bg-gray-100 text-gray-800 rounded-full my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
+            hover:bg-gray-200
             focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out
-            md:px-12 md:px-6 md:text-lg lg:px-16 lg:py-8 lg:text-3xl"
+            md:px-8 md:py-4 md:text-lg lg:px-16 lg:py-8 lg:text-4xl"
           >
             Download
           </button>
@@ -116,6 +166,160 @@
         </svg>
       </div>
     </section>
+    </div>
     </div> <!--nav + hero-->
+
+    <!-- Features Heading -->
+    <section id="features">
+      <div class="container mx-auto mt-16 px-6">
+        <h2 class="mb-6 text-5xl font-semibold text-center">Features</h2>
+        <p class="max-w-md mx-auto text-center text-gray-800">
+          Our aim is to make it quick and easy for you to take notes. Your notes sync between your devices so you can access
+          them on the go.
+        </p>
+      </div>
+    </section>
+
+     <!-- Features Tabs -->
+    <section id="tabs">
+      <!-- Tabs/Panels Container -->
+      <div class="container relative mx-auto my-6 mb-32 mt-12 px-6">
+        <!-- Tabs Flex Container -->
+        <div
+          class="flex flex-col justify-center max-w-xl mx-auto mb-6 border-b md:space-x-10 md:flex-row"
+        >
+          <!-- Tab 1 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            data-target="panel-1"
+          >
+            <div class="py-5 border-b-4 border-[#891112]" data-target="panel-1">
+              Simple Note-taking
+            </div>
+          </div>
+
+          <!-- Tab 2 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            data-target="panel-2"
+          >
+            <div class="py-5" data-target="panel-2">Immediate Searching</div>
+          </div>
+
+          <!-- Tab 3 -->
+          <div
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            data-target="panel-3"
+          >
+            <div class="py-5" data-target="panel-3">Painless Sharing</div>
+          </div>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="panels" class="container mx-auto">
+          <!-- Panel 1 -->
+          <div
+            class="flex flex-col py-5 md:flex-row md:space-x-7 panel panel-1"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="images/illustration-features-tab-1.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Note in one click
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Organize your Notes however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite notes.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-2"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="images/illustration-features-tab-2.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Intelligent search
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div
+            class="flex flex-col hidden py-5 md:flex-row md:space-x-7 panel panel-3"
+          >
+            <!-- Panel Image -->
+            <div class="flex justify-center md:w-1/2">
+              <img
+                src="images/illustration-features-tab-3.svg"
+                alt=""
+                class="relative z-10"
+              />
+            </div>
+            <!-- Panel Content -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+              <h3
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+              >
+                Share your bookmarks
+              </h3>
+              <p class="max-w-md text-center text-grayishBlue md:text-left">
+                Easily share your bookmarks and collections with others. Create
+                a shareable a link that you can send at the click of a button.
+              </p>
+              <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  >More Info</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
   </body>
 </html>
