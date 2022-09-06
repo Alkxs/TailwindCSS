@@ -34,7 +34,7 @@
     <!-- Navigation bar -->
     <nav id="header">
       <!-- Navigation container -->
-      <div class=" mx-auto w-full flex items-center justify-between py-2 px-6 space-x-5 md:space-x-0 md:mx-0 md:w-full">
+      <div class=" mx-auto w-full flex items-center justify-around py-2 px-6 space-x-5 md:space-x-0 md:mx-0 md:w-full">
         <!-- Logo -->
         <div class="z-20 w-24 h-32 items-center justify-center flex">
           <img src="./images/logo.png" alt="notefy logo image" class="w-full dark:bg-[#f0e6e6] rounded-2xl p-3" />
@@ -71,7 +71,10 @@
         </button>
 
         <!-- Menu items -->
-        <div class="hidden items-center space-x-16 uppercase text-black px-2 dark:text-gray-100 font-semibold text-lg md:flex">
+        <div class="hidden items-center space-x-16 uppercase text-black px-2
+         dark:text-gray-100 font-semibold text-lg 
+         md:flex md:space-x-6 md:text-md 
+         lg:text-xl">
           <a href="#features" class="tracking-widest hover:text-[#891112] p-2
           dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Features</a>
           <a href="#pricing" class="tracking-widest hover:text-[#891112] p-2
@@ -81,26 +84,26 @@
           <a href="#testimonials" class="tracking-widest hover:text-[#891112] p-2
           dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Testimonials</a>
         </div>
-
-        <button id="menu-btn" class="z-30 md:hidden focus:outline-none hamburger">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
+      <!-- Hamburger Button -->
+        <button id="menu-btn" class="z-50 md:hidden focus:outline-none hamburger">
+          <span class="hamburger-top dark:bg-white"></span>
+          <span class="hamburger-middle dark:bg-white"></span>
+          <span class="hamburger-bottom dark:bg-white"></span>
         </button>
       </div>
       <!-- Mobile Menu -->
-      <div id="menu" class="fixed inset-0 z-20 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-gray-100 uppercase divide-y divide-gray-500 opacity-90 bg-veryDarkBlue hidden">
-        <div class="w-full py-3 text-center">
+      <div id="menu" class="fixed inset-0 z-40 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-gray-100 uppercase divide-y divide-gray-500 opacity-90 bg-[#0b045b] hidden">
+        <div class="w-full py-5 text-center">
           <a href="#features" class="block hover:text-softRed">Features</a>
         </div>
-        <div class="w-full py-3 text-center">
-          <a href="#download" class="block hover:text-softRed">Download</a>
+        <div class="w-full py-5 text-center">
+          <a href="#download" class="block hover:text-softRed">Pricing</a>
         </div>
-        <div class="w-full py-3 text-center">
+        <div class="w-full py-5 text-center">
           <a href="#faq" class="block hover:text-softRed">FAQ</a>
         </div>
-        <div class="w-full py-3 text-center">
-          <a href="#" class="block hover:text-softRed">Login</a>
+        <div class="w-full py-5 text-center">
+          <a href="#" class="block hover:text-softRed">Testimonials</a>
         </div>
       </div>
     
@@ -109,27 +112,22 @@
     <!-- Hero section -->
     <section class="hero-section">
       <!-- Container For Image & Content -->
-      <div class="container p-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+      <div class="container p-4 py-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between
+      lg:py-24">
         <!-- Content -->
         <div class="flex flex-col w-full space-y-10 my-6 justify-center text-center md:w-1/2 md:text-left">
-          <h1 class="my-4 text-4xl font-semibold leading-tight dark:text-gray-100 md:text-5xl lg:text-6xl">
+          <h1 class="my-4 text-4xl font-semibold leading-tight dark:text-gray-100 md:text-5xl lg:text-5xl">
             A Simple Note Taking App
           </h1>
-          <p class="max-w-md mx-auto text-lg text-center text-gray-800 dark:text-gray-100 md:text-2xl md:text-left md:mt-0 md:mx-0">
+          <p class="max-w-md mx-auto text-lg text-center text-gray-800 dark:text-gray-100 md:text-xl md:text-left md:mt-0 md:mx-0">
             A clean and simple interface to organize your notes.
             Open your app and see your content instantly. Try it for
             free.
           </p>
-        </div>
-          <!-- Image -->
-          <div class="w-56 p-10 pr-6 text-center md:w-1/2">
-            <img class="w-full z-50" src="./images/notas.svg" alt="Notes image">
-          </div>
-      </div>
-      <!-- Button container -->
-          <div class="flex justify-center items-center w-full mb-6">
+          <!-- Button container -->
+          <div class="flex justify-center items-center w-full md:justify-start ">
           <button
-            class="text-sm font-semibold bg-gray-100 text-gray-800 rounded-full my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
+            class="text-sm font-semibold bg-gray-100 text-gray-800 rounded-3xl my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
             hover:bg-gray-200
             focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out
             md:px-10 md:text-lg lg:px-12 lg:py-6 lg:text-4xl lg:mb-24"
@@ -137,6 +135,12 @@
             Download
           </button>
           </div> <!--  button container -->
+        </div>
+          <!-- Image -->
+          <div class="w-48 py-6 flex items-center justify-center text-center md:w-1/2">
+            <img class="w-full z-20 md:w-3/4" src="./images/notas.svg" alt="Notes image">
+          </div>
+      </div>
       <!-- Wave SVG end section -->
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
