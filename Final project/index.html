@@ -27,12 +27,12 @@
     <script src="js/script.js" defer></script>
     <title>Final project</title>
   </head>
-  <body>
+  <body class="dark:bg-zinc-900">
     
-    <div class="main-gradient dark:dark-gradient">
+    <div class="main-gradient">
       <div id="main-container">
     <!-- Navigation bar -->
-    <nav id="header">
+    <nav id="header" class="dark:bg-zinc-900">
       <!-- Navigation container -->
       <div class=" mx-auto w-full flex items-center justify-around py-2 px-6 space-x-5 md:space-x-0 md:mx-0 md:w-full">
         <!-- Logo -->
@@ -77,12 +77,12 @@
          lg:text-xl">
           <a href="#features" class="tracking-widest hover:text-[#891112] p-2
           dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Features</a>
+          <a href="#download" class="tracking-widest hover:text-[#891112] p-2
+          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Download</a>
           <a href="#pricing" class="tracking-widest hover:text-[#891112] p-2
           dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Pricing</a>
           <a href="#faq" class="tracking-widest hover:text-[#891112] p-2
           dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">FAQ</a>
-          <a href="#testimonials" class="tracking-widest hover:text-[#891112] p-2
-          dark:hover:text-black dark:hover:bg-gray-100 dark:hover:rounded-xl">Testimonials</a>
         </div>
       <!-- Hamburger Button -->
         <button id="menu-btn" class="z-50 md:hidden focus:outline-none hamburger">
@@ -92,27 +92,27 @@
         </button>
       </div>
       <!-- Mobile Menu -->
-      <div id="menu" class="fixed inset-0 z-40 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-gray-100 uppercase divide-y divide-gray-500 opacity-90 bg-[#0b045b] hidden">
+      <div id="menu" class="fixed inset-0 z-40 flex-col items-center self-end w-full h-full m-h-screen px-6 py-1 pt-24 pb-4 tracking-widest text-gray-100 uppercase divide-y divide-gray-500 opacity-90 bg-[#0b045b] dark:bg-blue-9s00 hidden">
         <div class="w-full py-5 text-center">
-          <a href="#features" class="block hover:text-softRed">Features</a>
+          <a href="#features" class="block hover:text-black">Features</a>
         </div>
         <div class="w-full py-5 text-center">
-          <a href="#download" class="block hover:text-softRed">Pricing</a>
+          <a href="#download" class="block hover:text-black">Download</a>
         </div>
         <div class="w-full py-5 text-center">
-          <a href="#faq" class="block hover:text-softRed">FAQ</a>
+          <a href="#pricing" class="block hover:text-black">Pricing</a>
         </div>
         <div class="w-full py-5 text-center">
-          <a href="#" class="block hover:text-softRed">Testimonials</a>
+          <a href="#faq" class="block hover:text-black">FAQ</a>
         </div>
       </div>
     
     </nav>
 
     <!-- Hero section -->
-    <section class="hero-section">
+    <section class="hero-section relative dark:bg-zinc-800">
       <!-- Container For Image & Content -->
-      <div class="container p-4 py-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between
+      <div class="container mt-50 p-4 py-6 mx-auto flex flex-col-reverse md:flex-row items-center justify-between
       lg:py-24">
         <!-- Content -->
         <div class="flex flex-col w-full space-y-10 my-6 justify-center text-center md:w-1/2 md:text-left">
@@ -127,10 +127,10 @@
           <!-- Button container -->
           <div class="flex justify-center items-center w-full md:justify-start ">
           <button
-            class="text-sm font-semibold bg-gray-100 text-gray-800 rounded-3xl my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
-            hover:bg-gray-200
-            focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out
-            md:px-10 md:text-lg lg:px-12 lg:py-6 lg:text-4xl lg:mb-24"
+            class="text-sm font-semibold bg-[#131839] text-white rounded-lg my-6 py-4 px-8 shadow-lg border-2 border-[#891112] 
+            focus:outline-none focus:shadow-outline transform transition hover:scale-110 duration-300 ease-in-out
+            md:px-6s md:text-lg lg:px-10 lg:py-6 lg:text-4xl lg:mb-24
+           dark:bg-gray-100 dark:text-gray-700 dark:hover:opacity-90 dark:hover:text-gray-100 dark:hover:bg-zinc-600"
           >
             Download
           </button>
@@ -138,14 +138,15 @@
         </div>
           <!-- Image -->
           <div class="w-48 py-6 flex items-center justify-center text-center md:w-1/2">
-            <img class="w-full z-20 md:w-3/4" src="./images/notas.svg" alt="Notes image">
+            <img class="w-full  md:w-3/4" src="./images/notas.svg" alt="Notes image">
           </div>
       </div>
       <!-- Wave SVG end section -->
+      <div class="dark:hidden">
       <div class="relative -mt-12 lg:-mt-24">
         <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g class="dark:hidden dark:bg-gray-800" transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
               <path
                 d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
                 opacity="0.100000001"
@@ -160,13 +161,14 @@
                 opacity="0.200000003"
               ></path>
             </g>
-            <g transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g class="dark:hidden dark:bg-gray-800" transform="translate(-4.000000, 76.000000)" fill="#FFFFFF" fill-rule="nonzero">
               <path
                 d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
               ></path>
             </g>
           </g>
         </svg>
+       </div> <!--  div dark mode  -->
       </div>
     </section>
     </div>
@@ -175,8 +177,8 @@
     <!-- Features Heading -->
     <section id="features">
       <div class="container mx-auto mt-16 px-6">
-        <h2 class="mb-6 text-5xl font-semibold text-center">Features</h2>
-        <p class="max-w-md mx-auto text-center text-gray-800">
+        <h2 class="mb-6 text-5xl font-semibold text-center dark:text-gray-100">Features</h2>
+        <p class="max-w-md mx-auto text-center text-gray-800 dark:text-gray-100">
           Our aim is to make it quick and easy for you to take notes. Your notes sync between your devices so you can access
           them on the go.
         </p>
@@ -193,7 +195,7 @@
         >
           <!-- Tab 1 -->
           <div
-            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab dark:text-gray-200"
             data-target="panel-1"
           >
             <div class="py-5 border-b-4 border-[#891112]" data-target="panel-1">
@@ -203,7 +205,7 @@
 
           <!-- Tab 2 -->
           <div
-            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab dark:text-gray-200"
             data-target="panel-2"
           >
             <div class="py-5" data-target="panel-2">Immediate Searching</div>
@@ -211,7 +213,7 @@
 
           <!-- Tab 3 -->
           <div
-            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab"
+            class="flex justify-center text-center cursor-pointer text-gray-600 border-b md:border-b-0 hover:text-[#891112] md:w-1/3 tab dark:text-gray-200"
             data-target="panel-3"
           >
             <div class="py-5" data-target="panel-3">Painless Sharing</div>
@@ -235,11 +237,11 @@
             <!-- Panel Content -->
             <div class="flex flex-col space-y-8 md:w-1/2">
               <h3
-                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                class="mt-32 text-3xl font-semibold text-center md:mt-0 md:text-left dark:text-gray-100"
               >
                 Note in one click
               </h3>
-              <p class="max-w-md text-center text-grayishBlue md:text-left">
+              <p class="max-w-md text-center text-grayishBlue md:text-left dark:text-gray-200">
                 Organize your Notes however you like. Our simple
                 drag-and-drop interface gives you complete control over how you
                 manage your favourite notes.
@@ -247,7 +249,8 @@
               <div class="mx-auto md:mx-0">
                 <a
                   href="#"
-                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-[#891112] rounded-lg md:inline-flex bg-[#131839] hover:scale-110 transition 200 ease-in hover:opacity-80 hover:border-2
+                 dark:bg-gray-100 dark:text-gray-700 dark:hover:opacity-90 dark:hover:text-gray-100 dark:hover:bg-zinc-700"
                   >More Info</a
                 >
               </div>
@@ -269,18 +272,19 @@
             <!-- Panel Content -->
             <div class="flex flex-col space-y-8 md:w-1/2">
               <h3
-                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left dark:text-gray-100"
               >
                 Intelligent search
               </h3>
-              <p class="max-w-md text-center text-grayishBlue md:text-left">
+              <p class="max-w-md text-center text-grayishBlue md:text-left dark:text-gray-100">
                 Our powerful search feature will help you find saved sites in no
                 time at all. No need to trawl through all of your bookmarks.
               </p>
               <div class="mx-auto md:mx-0">
-                <a
+               <a
                   href="#"
-                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-[#891112] rounded-lg md:inline-flex bg-[#131839] hover:scale-110 transition 200 ease-in hover:opacity-80 hover:border-2
+                  dark:bg-gray-100 dark:text-gray-700 dark:hover:opacity-90 dark:hover:text-gray-100 dark:hover:bg-zinc-700"
                   >More Info</a
                 >
               </div>
@@ -302,18 +306,19 @@
             <!-- Panel Content -->
             <div class="flex flex-col space-y-8 md:w-1/2">
               <h3
-                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left"
+                class="mt-14 text-3xl font-semibold text-center md:mt-0 md:text-left dark:text-gray-100"
               >
                 Share your bookmarks
               </h3>
-              <p class="max-w-md text-center text-grayishBlue md:text-left">
+              <p class="max-w-md text-center text-grayishBlue md:text-left dark:text-gray-100">
                 Easily share your bookmarks and collections with others. Create
                 a shareable a link that you can send at the click of a button.
               </p>
               <div class="mx-auto md:mx-0">
                 <a
                   href="#"
-                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-white rounded-lg md:inline-flex bg-softBlue hover:bg-white hover:text-softBlue hover:border-softBlue hover:border-2"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-[#891112] rounded-lg md:inline-flex bg-[#131839] hover:scale-110 transition 200 ease-in hover:opacity-80 hover:border-2
+                  dark:bg-gray-100 dark:text-gray-700 dark:hover:opacity-90 dark:hover:text-gray-100 dark:hover:bg-zinc-700"
                   >More Info</a
                 >
               </div>
@@ -322,10 +327,10 @@
         </div>
       </div>
     </section>
+<div class="main-gradient">
+    <section id="download" class="dark:bg-zinc-700">
 
-    <section id="download" class="main-gradient">
-
-    <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg class="wave-top dark:hidden" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
           <g class="wave" fill="#f8fafc">
@@ -353,19 +358,22 @@
       </g>
     </svg>
     <div class="container mx-auto text-center py-20 space-y-8">
-      <h2 class="w-full my-2 text-4xl font-semibold leading-tight text-center text-black">Download it Now</h2>
-      <h5 class="m-4 text-xl leading-tight text-gray-800">Notefi lets you store all your most important notes in one safe location. Access them wherever you need, share and collaborate with friends, family and co-workers.</h5>
-      <button
-        class="mx-auto border-2border-[#891112] lg:mx-0 bg-gray-100 text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:bg-gray-200 hover:scale-105 duration-300 ease-in-out
-        lg:px-10"
-      >
-        Download
-      </button>
+      <h2 class="w-full my-2 text-4xl font-semibold leading-tight text-center text-black dark:text-gray-100">Download it Now</h2>
+      <h5 class="m-4 text-xl leading-tight text-gray-800 dark:text-gray-400">Notefi lets you store all your notes in one safe location. Access them wherever you need, share and collaborate with friends, family and co-workers.</h5>
+      <div class="mx-auto md:mx-0">
+                <a
+                  href="#"
+                  class="px-6 py-3 mt-4 font-semibold text-white border-2 border-[#891112] rounded-lg md:inline-flex bg-[#131839] hover:scale-110 transition 200 ease-in hover:opacity-80 hover:border-2
+                  dark:bg-gray-100 dark:text-gray-700 dark:hover:opacity-90 dark:hover:text-gray-100 dark:hover:bg-zinc-800"
+                  >Download</a
+                >
+              </div>
     </div>
     </section>
+    </div>
 
     <section id="pricing">
-      <div class="bg-gray-100 py-8">
+      <div class="bg-gray-100 py-8 dark:bg-zinc-800">
       <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Pricing</h2>
         <div class="w-full mb-4">
@@ -426,7 +434,7 @@
             </div>
             <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
               <div class="w-full pt-0 text-3xl text-gray-600 font-bold text-center">
-                $x5.99
+                $5.99
                 <span class="text-base">/ per user</span>
               </div>
               <div class="flex items-center justify-center">
@@ -443,12 +451,13 @@
     </section>
 
     <!-- FAQ Heading -->
+    <div class="dark:bg-zinc-700">
     <section id="faq">
       <div class="container pt-20 pb-10 mx-auto">
-        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl">
+        <h2 class="mb-6 text-3xl font-semibold text-center md:text-4xl dark:text-gray-100">
           Frequently Asked Questions
         </h2>
-        <p class="max-w-lg px-6 mx-auto text-center text-graishBlue">
+        <p class="max-w-lg px-6 mx-auto text-center text-gray-800 dark:text-gray-400">
           Here are some of our FAQs. If you have any other questions you'd like
           answered please feel free to email us.
         </p>
@@ -458,14 +467,14 @@
     <!-- FAQ Accordion -->
     <section id="faq-accordion">
       <!-- Main Container -->
-      <div class="container mx-auto px-6 mb-32">
+      <div class="container mx-auto px-6 mb-32 dark:mb-0 dark:pb-32">
         <!-- Accordion Container -->
         <div class="max-w-2xl m-8 mx-auto overflow-hidden">
           <!-- Tab 1 -->
           <div class="py-1 border-b outline-none group" tabindex="1">
             <!-- Tab Flex Container -->
             <div
-              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+              class="flex items-center justify-between py-3 dark:text-gray-200 text-black transition duration-500 cursor-pointer group ease"
             >
               <!-- Tab Title -->
               <div
@@ -492,7 +501,7 @@
             <div
               class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
             >
-              <p class="py-2 text-justify text-gray-400">
+              <p class="py-2 text-justify dark:text-gray-200 text-black">
                 Notefi is an app that enhance your note-taking experience. With the easy-to-use program interface you can access your notes in 1 second and share them with your family, friends or colleagues.
               </p>
             </div>
@@ -502,7 +511,7 @@
           <div class="py-1 border-b outline-none group" tabindex="2">
             <!-- Tab Flex Container -->
             <div
-              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+              class="flex items-center justify-between py-3 dark:text-gray-200 text-black transition duration-500 cursor-pointer group ease"
             >
               <!-- Tab Title -->
               <div
@@ -529,7 +538,7 @@
             <div
               class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
             >
-              <p class="py-2 text-justify text-gray-400">
+              <p class="py-2 text-justify dark:text-gray-200 text-black">
                 Notefi is easily accessible through mobile app on smartphones and tablets, desktop app for MAC or Windows, or through the web app on any browser.
               </p>
             </div>
@@ -539,7 +548,7 @@
           <div class="py-1 border-b outline-none group" tabindex="3">
             <!-- Tab Flex Container -->
             <div
-              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+              class="flex items-center justify-between py-3 dark:text-gray-200 text-black transition duration-500 cursor-pointer group ease"
             >
               <!-- Tab Title -->
               <div
@@ -566,7 +575,7 @@
             <div
               class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
             >
-              <p class="py-2 text-justify text-gray-400">
+              <p class="py-2 text-justify dark:text-gray-200 text-black">
                 Depending on how many features you need, we offer 3 different plans: free, personal or team. check out the pricing page for more info.
               </p>
             </div>
@@ -576,7 +585,7 @@
           <div class="py-1 border-b outline-none group" tabindex="4">
             <!-- Tab Flex Container -->
             <div
-              class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+              class="flex items-center justify-between py-3 dark:text-gray-200 text-black transition duration-500 cursor-pointer group ease"
             >
               <!-- Tab Title -->
               <div
@@ -603,7 +612,7 @@
             <div
               class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
             >
-              <p class="py-2 text-justify text-gray-400">
+              <p class="py-2 text-justify dark:text-gray-200 text-black">
                 We are confident you will enjoy our app. If for any reason you're unhappy with your experience, you have a 30-day money-back guarantee to get reimbursed on any Notefi plan you choose.
               </p>
             </div>
@@ -611,27 +620,27 @@
         </div>
       </div>
     </section>
+    </div>
 
-     <section >
-        <div class=" text-gray-800 text-center bg-gray-100 py-28">
-    <h2 class="text-3xl font-bold mb-12">Testimonials</h2>
+     <section id="testimonials"">
+        <div class=" text-gray-800 text-center bg-gray-100 py-28 dark:bg-zinc-800">
+    <h2 class="text-3xl font-bold mb-12 dark:text-gray-100">Testimonials</h2>
 
     <div class="grid md:grid-cols-3 gap-x-6 lg:gap-x-12">
       <div class="mb-12 md:mb-0">
         <div class="flex justify-center mb-6">
           <img src="https://randomuser.me/api/portraits/women/81.jpg" class="rounded-full shadow-lg w-32" />
         </div>
-        <h5 class="text-lg font-bold mb-4">Maria Smantha</h5>
-        <h6 class="font-medium text-blue-600 mb-4">Web Developer</h6>
-        <p class="mb-4">
+        <h5 class="dark:text-gray-200 text-lg font-bold mb-4">Maria Smantha</h5>
+        <h6 class="font-medium text-blue-400 mb-4">Web Developer</h6>
+        <p class="mb-4 dark:text-gray-300">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
             class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor"
               d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
             </path>
           </svg>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
-          tenetur quae quaerat ad velit ab hic tenetur.
+          Notefi is the perfect app that takes care of your needs. It is functional and helps you manage your note-taking system easily.
         </p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -680,16 +689,15 @@
         <div class="flex justify-center mb-6">
           <img src="https://randomuser.me/api/portraits/men/77.jpg" class="rounded-full shadow-lg w-32" />
         </div>
-        <h5 class="text-lg font-bold mb-4">Lisa Cudrow</h5>
-        <h6 class="font-medium text-blue-600 mb-4">Graphic Designer</h6>
-        <p class="mb-4">
+        <h5 class="dark:text-gray-200 text-lg font-bold mb-4">Lisa Cudrow</h5>
+        <h6 class="font-medium text-blue-400 mb-4">Graphic Designer</h6>
+        <p class="mb-4 dark:text-gray-300">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
             class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor"
               d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
             </path>
-          </svg>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-          laboriosam, nisi ut aliquid commodi.
+          </svg>Notefi is going to be the easiest way to collect all the information you need in a single place, with the option of making them available to someone else.
         </p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -738,16 +746,15 @@
         <div class="flex justify-center mb-6">
           <img src="https://randomuser.me/api/portraits/women/2.jpg" class="rounded-full shadow-lg w-32" />
         </div>
-        <h5 class="text-lg font-bold mb-4">John Smith</h5>
-        <h6 class="font-medium text-blue-600 mb-4">Marketing Specialist</h6>
-        <p class="mb-4">
+        <h5 class="dark:text-gray-200 text-lg font-bold mb-4">John Smith</h5>
+        <h6 class="font-medium text-blue-400 mb-4">Marketing Specialist</h6>
+        <p class="mb-4 dark:text-gray-300">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
             class="w-6 pr-2 inline-block" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path fill="currentColor"
               d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
             </path>
-          </svg>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti.
+          </svg>Notefi is absolutely incredible. Taking notes has never been so easy. The design is so neat that you can visually remember where your stored your notes.
         </p>
         <ul class="flex justify-center mb-0">
           <li>
@@ -783,10 +790,10 @@
             </svg>
           </li>
           <li>
-            <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="star" class="w-4 text-yellow-500"
-              role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star-half-alt"
+              class="w-4 text-yellow-500" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 512">
               <path fill="currentColor"
-                d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z">
+                d="M508.55 171.51L362.18 150.2 296.77 17.81C290.89 5.98 279.42 0 267.95 0c-11.4 0-22.79 5.9-28.69 17.81l-65.43 132.38-146.38 21.29c-26.25 3.8-36.77 36.09-17.74 54.59l105.89 103-25.06 145.48C86.98 495.33 103.57 512 122.15 512c4.93 0 10-1.17 14.87-3.75l130.95-68.68 130.94 68.7c4.86 2.55 9.92 3.71 14.83 3.71 18.6 0 35.22-16.61 31.66-37.4l-25.03-145.49 105.91-102.98c19.04-18.5 8.52-50.8-17.73-54.6zm-121.74 123.2l-18.12 17.62 4.28 24.88 19.52 113.45-102.13-53.59-22.38-11.74.03-317.19 51.03 103.29 11.18 22.63 25.01 3.64 114.23 16.63-82.65 80.38z">
               </path>
             </svg>
           </li>
@@ -797,7 +804,7 @@
   </section>
 
     <!-- Footer -->
-    <footer class="py-16 bg-gray-800">
+    <footer class="py-16 bg-gray-800 dark:bg-blue-900 dark:opacity-80">
       <!-- Footer Flex Container -->
       <div
         class="container flex flex-col items-center justify-around mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
@@ -810,6 +817,7 @@
 
           <a href="#features" class="uppercase hover:text-[#891112]">Features</a>
           <a href="#download" class="uppercase hover:text-[#891112]">Download</a>
+          <a href="#pricing" class="uppercase hover:text-[#891112]">Pricing</a>
           <a href="#faq" class="uppercase hover:text-[#891112]">FAQ</a>
         </div>
       </div>
@@ -817,6 +825,3 @@
     
   </body>
 </html>
-
-HAMBURGER MENU Mobile
-DARK MODE 
