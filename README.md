@@ -43,4 +43,4 @@ List of projects:
 |5|[Fylo](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/Fylo) | [Live Demo](https://inspiring-sherbet-f9b3aa.netlify.app) |
 |6|[Bookmark](https://github.com/Alkxs/TailwindCSS/tree/main/Tailwind_main-projects/bookmark) | [Live Demo](https://luxury-moonbeam-3c4b22.netlify.app) |
 | #             | My own final project | Live Demo  |
-|5|[Cooming soon]() | [...]() |
+|5|[Notefi final project]() | [Live Demo](custom-tailwind.netlify.app) |
